@@ -29,7 +29,7 @@
     left: 0;
 }
 .hero .content{
-    z-index: 888;
+    z-index: 20;
     color: #fff;
     width: 100%;
     margin-top: 50px;
@@ -74,4 +74,8 @@ display: none;
 
 .indicator-inactive {
     background-color: grey;
+}
+
+#reason {
+    background-color: #aedbfd49;
 }
