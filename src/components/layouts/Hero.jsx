@@ -3,6 +3,9 @@ import Button from '../Elements/Button';
 
 const Hero = ({data}) => {
   const [slide, setSlide] = useState(0);
+  if(!data){
+    return <div>loading...</div>
+  }
   return (
     <section id="hero" className="hero">
             {data.map((item, i) => {
@@ -30,7 +33,7 @@ const Hero = ({data}) => {
             <div className="container">
               <div className="flex flex-wrap">
                 <div className="w-full  px-4 lg:w-1/2 text-white ">
-                  <h1 className="uppercase text-4xl lg:text-5xl font-bold tracking-wider drop-shadow-md">Lorem ipsum dolor sit amet.</h1>
+                  <h1 className="uppercase text-4xl lg:text-5xl font-bold tracking-wider drop-shadow-md">ayo healing untuk kesehatanmu!</h1>
                   <p className="py-6 lg:py-12 drop-shadow-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugiat asperiores quod officia hic fugit soluta quisquam debitis quas ut eaque quo, esse possimus illo veniam quidem blanditiis provident voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt consequatur corrupti fugiat fuga! Facere voluptate harum sint atque eligendi.</p>
                   <Button classname='px-6 py-2 font-medium border bg-white text-slate-700 rounded-md hover:bg-slate-100 transition ease-out '>Go Explore</Button>
                 </div>
